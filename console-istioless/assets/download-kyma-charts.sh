@@ -1,9 +1,9 @@
 echo "Downloading kyma charts from master"
-curl https://codeload.github.com/Wawrzyn321/kyma/zip/console-istioless --output kyma-master.zip
-unzip -qq kyma-master.zip kyma-master/resources/*
+curl https://codeload.github.com/Wawrzyn321/kyma/zip/console-istioless --output kyma-console-istioless.zip
+unzip -qq kyma-console-istioless.zip kyma-console-istioless/resources/*
 rm -rf ./resources
-mv kyma-master/resources .
-rm -Rf ./kyma-master*
+mv kyma-console-istioless/resources .
+rm -Rf ./kyma-console-istioless*
 
 rm resources/core/charts/gateway/templates/kyma-gateway-certs.yaml
 # apiserver-proxy dependencies are not required (cannot be disabled by values yet):
