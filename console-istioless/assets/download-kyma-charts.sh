@@ -1,5 +1,5 @@
 echo "Downloading kyma charts from master"
-curl https://codeload.github.com/kyma-project/kyma/zip/master --output kyma-master.zip
+curl https://codeload.github.com/Wawrzyn321/kyma/zip/console-istioless --output kyma-master.zip
 unzip -qq kyma-master.zip kyma-master/resources/*
 rm -rf ./resources
 mv kyma-master/resources .
