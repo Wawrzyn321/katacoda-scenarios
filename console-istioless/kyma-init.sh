@@ -11,4 +11,5 @@ echo "Install CRDs"
 kubectl create ns kyma-system
 helm upgrade -i cluster-essentials resources/cluster-essentials -n kyma-system
 
-
+alias kc=kubectl
+alias kcs='kubectl -nkyma-system'
