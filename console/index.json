@@ -1,0 +1,40 @@
+{
+  "title": "Kyma Serverless",
+  "description": "",
+  "difficulty": "Beginner",
+  "time": "15",
+  "details": {
+    "steps": [
+      {
+        "title": "Prepare cluster",
+        "text": "prepare.md"
+      },
+      {
+        "title": "Prepare cluster",
+        "text": "step1.md"
+      },
+      {
+        "title": "Step 2",
+        "text": "step2.md"
+      }
+    ],
+    "intro": {
+      "text": "intro.md",
+      "code": "kyma-init.sh"
+    },
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+          {"file": "download-kyma-charts.sh", "target": "/root/", "chmod": "+x" }
+      ]
+    }
+  },
+  "environment": {
+    "uilayout": "terminal"
+  },
+  "backend": {
+    "imageid": "kubernetes-cluster-running:1.18"
+  }
+}
