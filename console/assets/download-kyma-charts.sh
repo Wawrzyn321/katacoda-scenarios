@@ -19,7 +19,7 @@ rm resources/istio-kyma-patch/templates/NOTES.txt
 rm resources/dex/templates/policy.yaml 
 rm resources/apiserver-proxy/templates/policy.yaml 
 rm -R resources/core/charts/istio-rbac
-rm resources/console/charts/backend/templates/servicerole*.yaml
+# rm resources/console/charts/backend/templates/servicerole*.yaml
 rm resources/logging/templates/loki/servicerole*.yaml
 rm resources/logging/charts/fluentbit/templates/policy.yaml
 rm resources/logging/templates/loki/policy.yaml
