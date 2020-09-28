@@ -13,5 +13,5 @@ helm upgrade -i cluster-essentials resources/cluster-essentials -n kyma-system
 
 alias kc=kubectl
 alias kcs='kubectl -nkyma-system'
-apt install mc
+yes | apt install mc
 export KUBE_EDITOR=mcedit
