@@ -1,4 +1,3 @@
+# Welcome to Kymcia Console tutorial
 
-Welcome to Kyma serverless tutorial.
-
-You will install Kyma serverless module configured with your docker registry, then you will deploy simple function.
+You will install the Console without Istio! How cool is that?
