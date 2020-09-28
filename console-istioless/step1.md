@@ -10,7 +10,7 @@ sed -i "s/window.clusterConfig = {/&\n      coreModuleUrl: '2886795279-8889-olli
 
 
 ```
-helm upgrade -i console resources/console -n kyma-system --set global.ingress.domainName=[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com --set global.environment.gardener=false
+helm upgrade -i console resources/console -n kyma-system --set global.ingress.domainName=[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com --set global.environment.gardener=false
 ```{{execute}}
 
 
@@ -49,5 +49,5 @@ kubectl port-forward $POD_NAME -nkyma-system --address 0.0.0.0 80:3000
 
 
 after both forwarded:
-[Console](http://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com/)
+[Console](http://[[HOST_SUBDOMAIN]]-8890-[[KATACODA_HOST]].environments.katacoda.com/)
 
