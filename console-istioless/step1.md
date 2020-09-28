@@ -5,7 +5,7 @@
 
 
 ```
-sed -i "s/window.clusterConfig = {/&\n      coreModuleUrl: '2886795279-8889-ollie09.environments.katacoda.com',"/ resources/console/charts/web/templates/configmap.yam
+sed -i "s/window.clusterConfig = {/&\n      coreModuleUrl: '2886795279-8889-ollie09.environments.katacoda.com',"/ resources/console/charts/web/templates/configmap.yaml
 ```{{execute}}
 
 
