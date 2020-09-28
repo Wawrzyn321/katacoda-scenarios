@@ -27,9 +27,7 @@
     },
     "assets": {
       "host01": [
-          {"file": "download-kyma-charts.sh", "target": "/root/", "chmod": "+x" },
-          {"file": "forward-backend.sh", "target": "/root/", "chmod": "+x" },
-          {"file": "forward-frontend.sh", "target": "/root/", "chmod": "+x" }
+          {"file": "*.sh", "target": "/root/", "chmod": "+x" }
       ]
     }
   },

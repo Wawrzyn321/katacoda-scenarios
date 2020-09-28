@@ -22,8 +22,8 @@ helm upgrade -i console resources/console -n kyma-system --set global.ingress.do
 
 2nd terminal
 ```
-/root/forward-console.sh
-```{{execute #2}}
+/root/forward-backend.sh
+```{{execute T2}}
 
 
 after both forwarded:
