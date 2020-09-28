@@ -14,9 +14,40 @@ helm upgrade -i console resources/console -n kyma-system --set global.ingress.do
 ```{{execute}}
 
 
+
+1st terminal
+```
+echo 'Waiting for console-web pod to start...'
+
+until kubectl -nkyma-system wait --for=condition=ready pod -l app=console-web > /dev/null 2>&1
+do
+  sleep 0.5
+done
+
+echo 'console-web up and running, creating port-forward...'
+
+POD_NAME=$(kubectl -nkyma-system get po -l app=console-web -o name)
+kubectl port-forward $POD_NAME -nkyma-system --address 0.0.0.0 8889:8060 8890:8070
+
+```{{execute}}
+
+
+2nd terminal
+```
+echo 'Waiting for console-backend pod to start...'
+
+until kubectl -nkyma-system wait --for=condition=ready pod -l app=console-backend > /dev/null 2>&1
+do
+  sleep 0.5
+done
+
+echo 'console-backend up and running, creating port-forward...'
+
+POD_NAME=$(kubectl -nkyma-system get po -l app=console-backend -o name)
+kubectl port-forward $POD_NAME -nkyma-system --address 0.0.0.0 80:3000
+```{{execute}}
+
+
+after both forwarded:
 [Console](http://[[HOST_SUBDOMAIN]]-[[KATACODA_HOST]].environments.katacoda.com/)
 
-
-kubectl port-forward console-web-74b6bf5dcb-6p5w4 -nkyma-system --address 0.0.0.0 8889:8060 8890:8070
-
-kubectl port-forward console-backend-8664d7d6c8-khkpw -nkyma-system --address 0.0.0.0 80:3000
