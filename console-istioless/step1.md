@@ -1,15 +1,7 @@
 # Install Console
 
 
-```
-echo [[HOST_SUBDOMAIN]]
-```{{execute}}
-
-```
-echo [[KATACODA_HOST]]
-```
-
-[tu so porty]([[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com)
+[tu so porty](http://[[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com)
 
 
 ```
