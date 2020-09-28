@@ -1,9 +1,5 @@
 # Install Console
 
-```
-echo dupa
-```{{execute}}
-
 
 ```
 echo [[HOST_SUBDOMAIN]]
@@ -12,6 +8,8 @@ echo [[HOST_SUBDOMAIN]]
 ```
 echo [[KATACODA_HOST]]
 ```
+
+[tu so porty]([[HOST_SUBDOMAIN]]-80-[[KATACODA_HOST]].environments.katacoda.com)
 
 
 ```
