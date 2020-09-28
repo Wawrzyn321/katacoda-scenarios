@@ -5,11 +5,11 @@
 
 
 ```
-sed -i 's/window.clusterConfig = {/&\n      coreModuleUrl=[[HOST_SUBDOMAIN]]-8889-[[KATACODA_HOST]].environments.katacoda.com/' resources/console/charts/web/templates/configmap.yaml
+sed -i 's/window.clusterConfig = {/&\n      coreModuleUrl:\'[[HOST_SUBDOMAIN]]-8889-[[KATACODA_HOST]].environments.katacoda.com/\',' resources/console/charts/web/templates/configmap.yaml
 ```{{execute}}
 
 ```
-sed -i 's/window.clusterConfig = {/&\n      coreAppUrl=[[HOST_SUBDOMAIN]]-8890-[[KATACODA_HOST]].environments.katacoda.com/' resources/console/charts/web/templates/configmap.yaml
+sed -i 's/window.clusterConfig = {/&\n      coreAppUrl:\'[[HOST_SUBDOMAIN]]-8890-[[KATACODA_HOST]].environments.katacoda.com/#\', resources/console/charts/web/templates/configmap.yaml
 ```{{execute}}
 
 ```
