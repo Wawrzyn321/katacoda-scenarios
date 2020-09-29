@@ -1,5 +1,3 @@
-# Expose Console to the world
-
 Forward Console ports outside
 ```
 /root/forward-console.sh

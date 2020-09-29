@@ -1,6 +1,3 @@
-# Install Console
-
-
 Adjust microfrontend URL to work with Katacoda
 ```
 sed -i "s/window.clusterConfig = {/&\n      coreModuleUrl: 'http:\/\/[[HOST_SUBDOMAIN]]-8889-[[KATACODA_HOST]].environments.katacoda.com',"/ resources/console/charts/web/templates/configmap.yaml
