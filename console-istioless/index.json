@@ -3,7 +3,7 @@
   "description": "",
   "difficulty": "Beginner",
   "time": "10",
-  "icon": "fa-accessible-icon",
+  "icon": "fa-kubernetes",
   "details": {
     "steps": [
       {
