@@ -1,27 +1,15 @@
+# Expose Console to the world
 
-# Deploy function
-
+Forward Console ports outside
 ```
-cat <<EOF | kubectl apply -f -
-apiVersion: serverless.kyma-project.io/v1alpha1
-kind: Function
-metadata:
-  name: hello
-spec:
-  source: |
-    module.exports = {
-      main: function(event, context) {
-        return 'Hello World!'
-      }
-    }
-EOF
-```{{execute}}
-
-# Expose function on port 8080 
-
-```
-echo "Open https://$DOMAIN in your browser"
-k port-forward --address 0.0.0.0 svc/hello 8080:80
+/root/forward-console.sh
 ```{{execute}}
 
 
+Forward Console backend ports outside (opens automatically in second terminal)
+```
+/root/forward-backend.sh
+```{{execute T2}}
+
+
+As soon as both port forwards are ready, here is your [Console](http://[[HOST_SUBDOMAIN]]-8890-[[KATACODA_HOST]].environments.katacoda.com/) link.

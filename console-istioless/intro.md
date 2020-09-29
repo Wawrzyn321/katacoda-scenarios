@@ -1,3 +1,3 @@
-# Welcome to Kymcia Console tutorial
+# Welcome to Kyma Console tutorial
 
-You will install the Console without Istio! How cool is that?
+You will install basic Kyma components along with Console UI chart. Then you will expose the Console to the world.

@@ -1,8 +1,9 @@
 {
-  "title": "Console istioless",
+  "title": "Kyma Console",
   "description": "",
   "difficulty": "Beginner",
-  "time": "15",
+  "time": "10",
+  "icon": "https://media.giphy.com/media/pa37AAGzKXoek/giphy.gif",
   "details": {
     "steps": [
       {
@@ -10,11 +11,11 @@
         "text": "prepare.md"
       },
       {
-        "title": "Prepare cluster",
+        "title": "Install Console chart",
         "text": "step1.md"
       },
       {
-        "title": "Step 2",
+        "title": "Expose Console",
         "text": "step2.md"
       }
     ],
